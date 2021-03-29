@@ -1,37 +1,44 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scaled=1.0"></meta>
 
-<title>Kỹ năng sống cho trẻ em</title>
+<meta name="viewport" content="width=device-width, initial-scaled=1" charset="utf-8"></meta>
 
+<title>Cẩm nang kỹ năng sống cho trẻ em</title>
+
+<link rel="icon" href="../assets/images/book.png"></link>
 <link rel="stylesheet" href="index.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
 
-<script src="index.js"></script>
 </head>
 
 <body>
 
-<div id="sidebar">
-	<div class="toggle-btn" onclick="ToggleSidebar()">
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
-	
+<input type="checkbox" id="check">
+<label for="check">
+	<i class="fas fa-bars" id="btn"></i>
+	<i class="fas fa-times" id="cancel"></i>
+</label>
+
+<div class="sidebar">
+	<header>Các kỹ năng</header>
 	<ul>
-		<li id="header">CÁC KỸ NĂNG</li>
-		<li>Nấu ăn</li>
-		<li>Vệ sinh</li>
-		<li>Sơ cứu</li>
-		<li>Giao tiếp</li>
+		<li><a href="#"><i class="fas fa-pizza-slice"></i>Nấu ăn</a></li>
+		<li><a href="#"><i class="fas fa-hand-rock"></i>Tự vệ</a></li>
+		<li><a href="#"><i class="fas fa-plus-square"></i>Vệ sinh</a></li>
+		<li><a href="#"><i class="fas fa-screwdriver"></i>Sửa chữa</a></li>
+		<li><a href="#"><i class="fas fa-money-bill"></i>Quản lý tiền</a></li>
 	</ul>
 </div>
 
-<!--Books image on top of the page (the first thing you see)-->
-<div class="top-image">
+<section>
+<div class="bg-image">
 	<img id="books" src="../assets/images/books.jpg">
 	<div class="center-text">Kỹ năng sống cho trẻ em</div>
 </div>
+</section>
 
 </body>
+
+</html>
