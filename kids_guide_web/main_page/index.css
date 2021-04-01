@@ -10,13 +10,12 @@ li, a {
 	list-style: none;
 }
 
-header .title {
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	background: #448ee4;
-	padding: 10px;
+/*
+content wont overlap with footer
+a bit hacky but it works nonetheless
+*/
+body {
+	margin-bottom: 100px;
 }
 
 header nav .nav_links {
@@ -38,13 +37,42 @@ header nav .nav_links li:hover a {
 	transition: all 0.5s ease;
 }
 
-.wallpaper {
+.banner {
+	display: inline-block;
+	overflow: hidden;
+}
+
+.banner .wallpaper {
+	display: block;
+	filter: blur(8px);
 	width: 100%;
-	height: auto;
+	max-height: 300px;
+	object-fit: cover;
+	transition: all 1.2s ease;
+}
+
+.banner .wallpaper:hover {
+	transform: scale(1.2);
+}
+
+.banner .txt {
+	pointer-events: none;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -200%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
 }
 
 footer {
-	position: relative;
+	position: fixed;
 	bottom: 0px;
 	width: 100%;
 	text-align: center;
