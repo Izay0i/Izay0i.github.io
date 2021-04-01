@@ -18,23 +18,71 @@ body {
 	margin-bottom: 100px;
 }
 
-header nav .nav_links {
+header nav {
 	background: #343a40;
 }
 
-header nav .nav_links li {
-	margin: 10px;
-	padding: 5px;
+header nav a {
+	float: left;
 	display: inline-block;
-}
-
-header nav .nav_links li a {
+	padding: 15px 17px;
 	color: white;
 }
 
-header nav .nav_links li:hover a {
+header nav a:hover {
 	color: aqua;
 	transition: all 0.5s ease;
+}
+
+header nav a.home {
+	margin-right: 8px;
+	background-color: #800080;
+}
+
+header nav a.home:hover {
+	color: gold;
+}
+
+header nav .dropdown {
+	overflow: hidden;
+}
+
+header nav .dropdown .dropdown_btn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 15px 17px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0px;
+}
+
+header nav .dropdown .dropdown_content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+}
+
+header nav .dropdown .dropdown_content a {
+	float: none;
+	color: white;
+	padding: 12px 16px;
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav .dropdown .dropdown_content a:hover {
+	background-color: #4a54db;
+}
+
+header nav .dropdown:hover .dropdown_content {
+	display: block;
+	background-color: #373a3d;
 }
 
 .banner {
@@ -44,7 +92,7 @@ header nav .nav_links li:hover a {
 
 .banner .wallpaper {
 	display: block;
-	filter: blur(8px);
+	filter: blur(5px);
 	width: 100%;
 	max-height: 300px;
 	object-fit: cover;
@@ -64,11 +112,11 @@ header nav .nav_links li:hover a {
 	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -200%);
-	z-index: 2;
-	width: 80%;
+	transform: translate(-50%, -130%);
+	width: 60%;
 	padding: 20px;
 	text-align: center;
+	z-index: 1;
 }
 
 footer {
