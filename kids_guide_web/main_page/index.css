@@ -15,10 +15,15 @@ content wont overlap with footer
 a bit hacky but it works nonetheless
 */
 body {
-	margin-bottom: 100px;
+	background-color: #e5e1d8;
+	margin-bottom: 90px;
 }
 
 header nav {
+	z-index: 1000;
+	position: fixed;
+	top: 0px;
+	width: 100%;
 	background: #343a40;
 }
 
@@ -106,14 +111,14 @@ header nav .dropdown:hover .dropdown_content {
 .banner .txt {
 	pointer-events: none;
 	color: white;
-	font-size: 20px;
+	font-size: 12px;
 	font-weight: bold;
 	border: 3px solid #f1f1f1;
 	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -130%);
-	width: 60%;
+	transform: translate(-50%, -150%);
+	width: 80%;
 	padding: 20px;
 	text-align: center;
 	z-index: 1;
