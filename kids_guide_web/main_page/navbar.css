@@ -1,0 +1,104 @@
+.dropdown {
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+	width: 100%;
+	background-color: #343a40;
+}
+
+.dropdown:before, .dropdown:after {
+	content: '';
+	display: table;
+}
+
+.dropdown:after {
+	clear: both;
+}
+
+.dropdown li {
+	float: left;
+	box-shadow: 1px 0 0 #444;
+	position: relative;
+}
+
+.dropdown a {
+	float: left;
+	padding: 12px 30px;
+	color: white;
+}
+
+.dropdown li:hover > a {
+	color: white;
+}
+
+.dropdown ul {
+	margin: 20px;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 42px;
+	left: 0px;
+	z-index: 1;
+	background-color: #343a40;
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+}
+
+.dropdown li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	margin: 0px;
+}
+
+.dropdown ul ul {
+	top: 0px;
+	left: 200px;
+	margin: 0 0 0 20px;
+}
+
+.dropdown ul li {
+	float: none;
+	display: block;
+	border: 0px;
+	box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+
+.dropdown ul li:last-child {
+	box-shadow: none;
+}
+
+.dropdown ul a {
+	padding: 10px;
+	width: 200px;
+	display: block;
+	float: none;
+}
+
+.dropdown ul a:hover {
+	background-color: #4a54db;
+}
+
+.dropdown ul li:first-child > a {
+	border-radius: 3px 3px 0 0;	
+}
+
+.dropdown ul li:first-child a:hover:after {
+	border-bottom-color: #fff;
+}
+
+.dropdown ul ul li:first-child a:hover:after {
+	border-right-color: #fff;
+	border-bottom-color: transparent;	
+}
+
+.dropdown ul li:last-child > a {
+	border-radius: 0 0 3px 3px;
+}
+
+.dropdown .home {
+	background-color: #800080;
+}
+
+.dropdown .home:hover {
+	color: gold;
+}
