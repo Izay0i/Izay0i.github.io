@@ -16,41 +16,35 @@ a bit hacky but it works nonetheless
 */
 body {
 	background-color: #e5e1d8;
+	margin-top: 42px;
 	margin-bottom: 90px;
 }
 
 .banner {
-	display: inline-block;
+	display: block;
 	overflow: hidden;
 }
 
 .banner .wallpaper {
-	display: block;
-	filter: blur(5px);
 	width: 100%;
-	max-height: 300px;
+	height: 300px;
 	object-fit: cover;
-	transition: all 1.2s ease;
 }
 
-.banner .wallpaper:hover {
-	transform: scale(1.2);
+iframe {
+	display: block;
+	margin: auto;
 }
 
-.banner .txt {
-	pointer-events: none;
+article {
+	display: block;
+	white-space: pre-wrap;
+}
+
+article p {
+	background-color: black;
 	color: white;
-	font-size: 12px;
-	font-weight: bold;
-	border: 3px solid #f1f1f1;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -150%);
-	width: 80%;
-	padding: 20px;
-	text-align: center;
-	z-index: 1;
+	font-size: 20px;
 }
 
 footer {
