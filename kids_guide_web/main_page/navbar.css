@@ -1,9 +1,10 @@
+/*Being a programmer is already hard, being a designer is even harder*/
 .dropdown {
 	position: fixed;
 	top: 0px;
 	z-index: 1000;
 	width: 100%;
-	background-color: #343a40;
+	background-color: #049DD9;
 }
 
 .dropdown:before, .dropdown:after {
@@ -16,6 +17,9 @@
 }
 
 .dropdown li {
+	margin: 8px;
+	background-color: #4ABFD9;
+	border-radius: 20px;
 	float: left;
 	position: relative;
 }
@@ -35,11 +39,11 @@
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
-	top: 42px;
+	top: 45px;
 	left: 0px;
 	z-index: 1;
-	background-color: #343a40;
-	border-radius: 3px;
+	background-color: #4ABFD9;
+	border-radius: 20px;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -51,15 +55,13 @@
 
 .dropdown ul ul {
 	top: 0px;
-	left: 200px;
+	left: 170px;
 	margin: 0 0 0 20px;
 }
 
 .dropdown ul li {
 	float: none;
 	display: block;
-	border: 0px;
-	box-shadow: 0 1px 0 #111, 0 2px 0 #666;
 }
 
 .dropdown ul li:last-child {
@@ -68,36 +70,21 @@
 
 .dropdown ul a {
 	padding: 10px;
-	width: 200px;
+	width: 158px;
 	display: block;
 	float: none;
+	border-radius: 20px;
 }
 
 .dropdown ul a:hover {
-	background-color: #4a54db;
-}
-
-.dropdown ul li:first-child > a {
-	border-radius: 3px 3px 0 0;	
-}
-
-.dropdown ul li:first-child a:hover:after {
-	border-bottom-color: #fff;
-}
-
-.dropdown ul ul li:first-child a:hover:after {
-	border-right-color: #fff;
-	border-bottom-color: transparent;	
-}
-
-.dropdown ul li:last-child > a {
-	border-radius: 0 0 3px 3px;
+	background-color: #04D9B2;
 }
 
 .dropdown .home {
-	background-color: #800080;
+	border-radius: 20px;
+	background-color: #F272D0;
 }
 
 .dropdown .home:hover {
-	color: gold;
+	color: #F2BC57;
 }

@@ -15,9 +15,9 @@ content wont overlap with footer
 a bit hacky but it works nonetheless
 */
 body {
-	background-color: #e5e1d8;
 	margin-top: 42px;
 	margin-bottom: 90px;
+	background-color: #6A92F2;
 }
 
 .banner {
@@ -26,25 +26,10 @@ body {
 }
 
 .banner .wallpaper {
-	width: 100%;
-	height: 300px;
+	width: 100vw;
+	height: 500px;
 	object-fit: cover;
-}
-
-iframe {
-	display: block;
-	margin: auto;
-}
-
-article {
-	display: block;
-	white-space: pre-wrap;
-}
-
-article p {
-	background-color: black;
-	color: white;
-	font-size: 20px;
+	object-position: right bottom;
 }
 
 footer {
